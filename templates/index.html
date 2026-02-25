@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>QuickNote</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>QuickNote</h1>
+
+    <form action="/add" method="POST">
+        <input type="text" name="text" placeholder="Enter a note..." required>
+        <button type="submit">Add</button>
+    </form>
+
+    <h2>Notes</h2>
+    <ul>
+        {% for note in notes %}
+            <li>{{ note.text }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
