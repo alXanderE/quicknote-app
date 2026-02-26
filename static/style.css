@@ -16,3 +16,9 @@ button {
 ul {
     margin-top: 20px;
 }
+
+h1 {
+    font-style: normal;
+    background: linear-gradient(85deg, #111820, #2000eb);
+    font-size: 50px;
+}

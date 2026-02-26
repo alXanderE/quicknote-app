@@ -7,7 +7,6 @@ from datetime import datetime
 load_dotenv()
 
 app = Flask(__name__)
-
 # MongoDB connection
 client = MongoClient(os.getenv("MONGO_URI"))
 db = client["quicknote"]
