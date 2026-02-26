@@ -6,13 +6,14 @@
 </head>
 <body>
     <h1>Jungle of Text</h1>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
     <form action="/add" method="POST">
-        <input type="text" name="text" placeholder="Enter a note..." required>
+        <input type="text" name="text" placeholder="Send a message into the jungle..." required>
         <button type="submit">Add</button>
     </form>
 
-    <h2>Notes</h2>
+    <h2>Current Texts in the Jungle</h2>
     <ul>
         {% for note in notes %}
             <li>{{ note.text }}</li>

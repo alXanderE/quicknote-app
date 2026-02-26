@@ -10,7 +10,9 @@ input {
 }
 
 button {
-    padding: 8px;
+    padding: 10px;
+    color: rgb(212, 224, 215);
+    background-color: maroon;
 }
 
 ul {
@@ -19,6 +21,20 @@ ul {
 
 h1 {
     font-style: normal;
-    background: linear-gradient(85deg, #111820, #2000eb);
-    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(120deg, #10ee69, #8e4301);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 70px;
+}
+
+h2 {
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    background: linear-gradient(60deg, #10ee69, #8e4301);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 30px;
 }
