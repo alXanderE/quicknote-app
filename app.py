@@ -8,7 +8,6 @@ load_dotenv()
 
 app = Flask(__name__)
 
-print("MONGO URI:", os.getenv("MONGO_URI"))
 # MongoDB connection
 client = MongoClient(os.getenv("MONGO_URI"))
 db = client["quicknote"]
