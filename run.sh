@@ -3,7 +3,7 @@ set -euo pipefail
 
 APP_DIR="$HOME/quicknote-app"
 APP_FILE="app.py"
-PY="$APP_DIR/usr/bin/python3.12"
+PY="/usr/bin/python3.12"
 
 cd "$APP_DIR"
 
